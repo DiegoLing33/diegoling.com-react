@@ -25,6 +25,7 @@
   },
   {
     "name": "Lifeline",
+    "lyrics": true,
     "stores": {
       "itunes": "https://itunes.apple.com/ru/album/lifeline/1434980620",
       "yandexmusic": "https://music.yandex.ru/album/5670518/track/42804332"
@@ -32,6 +33,7 @@
   },
   {
     "name": "Get Away",
+    "lyrics": true,
     "stores": {
       "itunes": "https://itunes.apple.com/ru/album/get-away-single/1442606952",
       "yandexmusic": "https://music.yandex.ru/album/5971532"
@@ -39,6 +41,7 @@
   },
   {
     "name": "Dance The Endless Night",
+    "lyrics": true,
     "stores": {
       "itunes": "https://itunes.apple.com/ru/album/dance-the-endless-night-single/1434983985",
       "yandexmusic": "https://music.yandex.ru/album/5670653/track/42804921"

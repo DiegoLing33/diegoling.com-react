@@ -82,7 +82,7 @@ export default class TrackThumbView extends Component<IndexSongItemProps & {offs
                     </div>
                     <div className="card-body">
                         <img src={this.props.img} alt={this.props.name + " Artwork"}/>
-                        {/*<audio preload="none" src={this.props.audio} />*/}
+                        {window.location.href.indexOf("localhost") > -1 ? "" : <audio preload="none" src={this.props.audio} />}
                     </div>
                     <div className="list-group list-group-flush">
                         {this.getStoresContent()}
