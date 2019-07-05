@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    margin-top: 130px;
+}
+
+#bg{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/img/artist.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.4;
+}
+
+.logo{
+    width: 600px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar{
+    background-color: #000000 !important;
+    transition: none;
+}
+
+.navbar-brand{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    padding-top: 30px;
+}
+
+.navbar-toggler{
+    z-index: 1;
+    margin-left: 80%;
+    border: none;
+}
+
+.nav-link{
+    transition: all 0.5s;
+}
+
+.social-links{
+    max-width: 80%;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.social-links .item{
+    display: inline-block;
+    padding: 5px;
+    width: 30.333%;
+    transition: all 0.5s;
+    opacity: 0.78;
+}
+
+.social-links .item:hover{
+    opacity: 1;
+}
+
+.social-links .item img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card{
+    background-color: #101010 !important;
+}
+
+.card .card-header{
+    background-color: rgba(8, 8, 8, 0.38);
+    text-transform: uppercase;
+}
+
+.card .card-footer{
+    background-color: rgba(8, 8, 8, 0.38);
+}
+
+.no-select,
+.card-info{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.card-song{
+
+}
+
+.card-song .card-body{
+    padding: 0;
+}
+
+.card-song .fab{
+    margin-right: 15px;
+}
+
+.card-song .list-group-item{
+    cursor: pointer;
+    background-color: rgba(26, 26, 26, 0.53);
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-song .disabled{
+    cursor: default;
+    background-color: rgba(26, 26, 26, 0.53);
+    opacity: 0.05;
+    transition: opacity 0.5s;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-song .list-group-item:hover{
+   opacity: 1;
+}
+
+.card-song img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-song .audioplayer{
+    width: 100%;
+    margin-top: -35px;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+
+.card-song .audioplayer:hover {
+    opacity: 1;
+}
+
+.card-song .card-header {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*
+ * UTILS
+ */
+
+.hover-transition{
+    transition: all 0.5s;
+}
+
+

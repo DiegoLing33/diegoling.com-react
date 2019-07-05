@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Container from "./components/Container";
+import IndexTracksWrapper from "./components/Music/IndexTracksWrapper";
+import {Route, Switch} from "react-router";
+import TrackViewPage from "./components/TrackViewPage";
+import NavigationBar from "./components/NavigationBar";
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+        <div>
+            <NavigationBar/>
+            <div className="wrapper">
+                <Header/>
+                <Container>
+                    <Switch>
+                        <Route exact path={"/"} component={IndexTracksWrapper}/>
+                        <Route exact path={"/track/:track"} component={TrackViewPage}/>
+                    </Switch>
+                </Container>
+            </div>
+        </div>
+    );
+};
 
 export default App;

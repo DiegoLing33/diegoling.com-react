@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Play In Zero",
+    "lyrics": false,
+    "stores": {
+      "itunes": "#",
+      "spotify": "#",
+      "boom": "#",
+      "yandexmusic": "#"
+    }
+  },
+  {
+    "name": "Bunny Girl",
+    "lyrics": true,
+    "stores": {
+      "itunes": "https://itunes.apple.com/ru/album/bunny-girl/1464332673",
+      "spotify": "https://open.spotify.com/album/03yRg8ue8iDwQ2ToMaywBg",
+      "boom": "https://boom.ru/redirect/album/7165203",
+      "yandexmusic": "https://music.yandex.ru/album/7591442/track/53216690"
+    },
+    "promo": {
+      "title": "Promo Video 2019",
+      "url": "https://www.youtube.com/embed/hrV0UkqEl5E"
+    }
+  },
+  {
+    "name": "Lifeline",
+    "stores": {
+      "itunes": "https://itunes.apple.com/ru/album/lifeline/1434980620",
+      "yandexmusic": "https://music.yandex.ru/album/5670518/track/42804332"
+    }
+  },
+  {
+    "name": "Get Away",
+    "stores": {
+      "itunes": "https://itunes.apple.com/ru/album/get-away-single/1442606952",
+      "yandexmusic": "https://music.yandex.ru/album/5971532"
+    }
+  },
+  {
+    "name": "Dance The Endless Night",
+    "stores": {
+      "itunes": "https://itunes.apple.com/ru/album/dance-the-endless-night-single/1434983985",
+      "yandexmusic": "https://music.yandex.ru/album/5670653/track/42804921"
+    }
+  }
+]
