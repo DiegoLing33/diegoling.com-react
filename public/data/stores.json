@@ -1,0 +1,22 @@
+{
+  "itunes":      {
+    "icon": "fab fa-itunes-note",
+    "title": "iTunes",
+    "url": "https://itunes.apple.com/ru/"
+  },
+  "spotify":     {
+    "icon": "fab fa-spotify",
+    "title": "Spotify",
+    "url": "https://open.spotify.com/"
+  },
+  "boom":        {
+    "icon": "fab fa-vk",
+    "title": "Boom",
+    "url": "https://boom.ru/redirect/"
+  },
+  "yandexmusic": {
+    "icon": "fab fa-yandex",
+    "title": "Яндекс Музыка",
+    "url": "https://music.yandex.ru/"
+  }
+}

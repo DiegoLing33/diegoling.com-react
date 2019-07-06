@@ -1,6 +1,7 @@
 [
   {
     "name": "Play In Zero",
+    "release": "JULY 05, 2019",
     "lyrics": false,
     "stores": {
       "itunes": "#",
@@ -11,12 +12,13 @@
   },
   {
     "name": "Bunny Girl",
+    "release": "MAY 17, 2019",
     "lyrics": true,
     "stores": {
-      "itunes": "https://itunes.apple.com/ru/album/bunny-girl/1464332673",
-      "spotify": "https://open.spotify.com/album/03yRg8ue8iDwQ2ToMaywBg",
-      "boom": "https://boom.ru/redirect/album/7165203",
-      "yandexmusic": "https://music.yandex.ru/album/7591442/track/53216690"
+      "itunes": "album/bunny-girl/1464332673",
+      "spotify": "album/03yRg8ue8iDwQ2ToMaywBg",
+      "boom": "album/7165203",
+      "yandexmusic": "album/7591442/track/53216690"
     },
     "promo": {
       "title": "Promo Video 2019",
@@ -25,26 +27,29 @@
   },
   {
     "name": "Lifeline",
+    "release": "AUGUST 15, 2018",
     "lyrics": true,
     "stores": {
-      "itunes": "https://itunes.apple.com/ru/album/lifeline/1434980620",
-      "yandexmusic": "https://music.yandex.ru/album/5670518/track/42804332"
+      "itunes": "album/lifeline/1434980620",
+      "yandexmusic": "album/5670518/track/42804332"
     }
   },
   {
     "name": "Get Away",
+    "release": "NOVEMBER 30, 2018",
     "lyrics": true,
     "stores": {
-      "itunes": "https://itunes.apple.com/ru/album/get-away-single/1442606952",
-      "yandexmusic": "https://music.yandex.ru/album/5971532"
+      "itunes": "album/get-away-single/1442606952",
+      "yandexmusic": "album/5971532"
     }
   },
   {
     "name": "Dance The Endless Night",
+    "release": "DECEMBER 20, 2017",
     "lyrics": true,
     "stores": {
-      "itunes": "https://itunes.apple.com/ru/album/dance-the-endless-night-single/1434983985",
-      "yandexmusic": "https://music.yandex.ru/album/5670653/track/42804921"
+      "itunes": "album/dance-the-endless-night-single/1434983985",
+      "yandexmusic": "album/5670653/track/42804921"
     }
   }
 ]

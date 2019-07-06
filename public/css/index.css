@@ -3,7 +3,7 @@ body{
 }
 
 .wrapper{
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 #bg{
@@ -22,9 +22,10 @@ body{
 
 .logo{
     width: 600px;
-    max-width: 80%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
+    margin-bottom: -20px;
 }
 
 .navbar{
@@ -100,7 +101,8 @@ body{
 }
 
 .card-song{
-
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .card-song .card-body{
@@ -108,6 +110,10 @@ body{
 }
 
 .card-song .fab{
+    margin-right: 15px;
+}
+
+.card-song .fas{
     margin-right: 15px;
 }
 
@@ -163,4 +169,20 @@ body{
     transition: all 0.5s;
 }
 
+.release-grid-item{
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: all 0.7s;
+}
 
+.release-grid-item:hover{
+    color: #989898;
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+.release-grid-item img{
+    margin-bottom: 10px;
+}

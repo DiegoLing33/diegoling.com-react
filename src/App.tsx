@@ -1,26 +1,69 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from "./components/Header";
 import Container from "./components/Container";
-import IndexTracksWrapper from "./components/Music/IndexTracksWrapper";
+import IndexPage from "./components/pages/IndexPage";
 import {Route, Switch} from "react-router";
-import TrackViewPage from "./components/TrackViewPage";
+import TrackPage from "./components/pages/TrackPage";
 import NavigationBar from "./components/NavigationBar";
+import Application from "./app/Application";
+import ReleasesPage from "./components/pages/ReleasesPage";
 
-const App: React.FC = () => {
-    return (
-        <div>
-            <NavigationBar/>
-            <div className="wrapper">
-                <Header/>
-                <Container>
-                    <Switch>
-                        <Route exact path={"/"} component={IndexTracksWrapper}/>
-                        <Route exact path={"/track/:track"} component={TrackViewPage}/>
-                    </Switch>
-                </Container>
-            </div>
-        </div>
-    );
-};
+/**
+ * Состояния приложения
+ */
+export interface IAppStates {
+    ready: boolean;
+}
 
-export default App;
+export default class App extends Component<any, IAppStates> {
+
+    /**
+     * Состояния
+     */
+    state: IAppStates = {
+        ready: false
+    };
+
+    /**
+     * Цикл загрузки
+     */
+    protected __loadingLoop: any;
+
+    /**
+     * Компонент загружен
+     */
+    public componentDidMount(): void {
+        console.log("Data loading...");
+        Application.startManagersLoading();
+        if (this.__loadingLoop) clearInterval(this.__loadingLoop);
+        this.__loadingLoop = setInterval(() => {
+            this.setState({ready: Application.isEveryManagerReady()});
+            clearInterval(this.__loadingLoop);
+        }, 100);
+    }
+
+    /**
+     * Отрисовка
+     */
+    public render(): React.ReactNode {
+        if (this.state.ready) {
+            return (
+                <div>
+                    <NavigationBar/>
+                    <div className="wrapper">
+                        <Header/>
+                        <Container>
+                            <Switch>
+                                <Route exact path={"/"} component={IndexPage}/>
+                                <Route exact path={"/track/:track"} component={TrackPage}/>
+                                <Route exact path={"/releases"} component={ReleasesPage}/>
+                            </Switch>
+                        </Container>
+                    </div>
+                </div>
+            );
+        } else {
+            return <div>Loading...</div>;
+        }
+    }
+}

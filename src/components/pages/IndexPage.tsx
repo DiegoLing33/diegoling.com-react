@@ -1,13 +1,13 @@
 import {Component} from "react";
-import {Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import * as React from "react";
-import TracksManager from "../../app/TracksManager";
-import TrackThumbView from "./TrackThumbView";
+import Application from "../../app/Application";
+import TrackNode from "../track/TrackNode";
 
 /**
  * Список треков
  */
-export default class IndexTracksWrapper extends Component {
+export default class IndexPage extends Component {
 
     state = {
         tracks: null,
@@ -17,13 +17,10 @@ export default class IndexTracksWrapper extends Component {
      * Компонент загружен
      */
     componentDidMount(): void {
-        TracksManager.loadTracks()
-            .then(tracks => {
-                this.setState({
-                    tracks: tracks.map((value, index) =>
-                        TrackThumbView.createByData({...value, index: index + 1}))
-                });
-            });
+        this.setState({
+            tracks: Application.managers.tracksManager.list().map((value, index) =>
+                <Col md={4} key={value.name}>{TrackNode.createByData({...value, index: index + 1})}</Col>)
+        });
     }
 
     /**
