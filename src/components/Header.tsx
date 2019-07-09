@@ -28,7 +28,7 @@ export default class Header extends Component {
         return (
             <div className="container">
                 <div className="logo-wrapper animated fadeIn">
-                    <img className="logo hover-transition" src="/img/logowhite.png" alt={"Diego Ling logo"}/>
+                    <img className="logo hover-transition" src={"/img/logowhite.png"} alt={"Diego Ling logo"}/>
                     <div className="social-links no-select">
                         {/*<div style={{marginBottom: 30}}>*/}
                             {/*Diego Ling is the King of the Everything that can burn in black fire*/}

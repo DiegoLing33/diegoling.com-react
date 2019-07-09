@@ -53,8 +53,7 @@ export default class ReleasesPage extends Component {
             <CardView title={"Releases"}>
                 <div style={{padding: 15}}>
                     <Row>
-                        {Application.managers.tracksManager.list()
-                            .map(value => <ReleasesPageGridItem {...value} />)}
+                        {Application.managers.tracksManager.list().map(value => <ReleasesPageGridItem {...value} />)}
                     </Row>
                 </div>
             </CardView>

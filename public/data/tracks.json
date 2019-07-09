@@ -2,13 +2,16 @@
   {
     "name": "Play In Zero",
     "release": "JULY 05, 2019",
-    "lyrics": false,
+    "lyrics": true,
     "stores": {
-      "itunes": "#",
-      "spotify": "#",
-      "boom": "#",
-      "yandexmusic": "#"
-    }
+      "itunes": "album/play-in-zero-single/1471848641",
+      "spotify": "album/0TaxRhoiPt5NrprlBpegXe",
+      "boom": "album/7515995",
+      "yandexmusic": "album/7975153"
+    }, "promo":{
+    "title":"Play in Zero Promo 2019",
+    "url":"https://youtube.com/embed/kRMCIuUhnQU"
+  }
   },
   {
     "name": "Bunny Girl",

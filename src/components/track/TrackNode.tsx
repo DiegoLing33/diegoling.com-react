@@ -33,7 +33,7 @@ import {Link} from "react-router-dom";
 /**
  * Свойства блока трека
  */
-export interface TrackNodePropes extends ITrack {
+export interface TrackNodeProps extends ITrack {
     img: string;
     audio: string;
     index?: number;
@@ -58,7 +58,7 @@ export function TrackNodeLink(props: { link: string, title: string, icon: string
 /**
  * Блок трека
  */
-export default class TrackNode extends Component<TrackNodePropes> {
+export default class TrackNode extends Component<TrackNodeProps> {
 
     /**
      * Создает объект по значению

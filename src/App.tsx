@@ -37,8 +37,10 @@ export default class App extends Component<any, IAppStates> {
         Application.startManagersLoading();
         if (this.__loadingLoop) clearInterval(this.__loadingLoop);
         this.__loadingLoop = setInterval(() => {
-            this.setState({ready: Application.isEveryManagerReady()});
-            clearInterval(this.__loadingLoop);
+            if(Application.isEveryManagerReady()) {
+                this.setState({ready: true});
+                clearInterval(this.__loadingLoop);
+            }
         }, 100);
     }
 
