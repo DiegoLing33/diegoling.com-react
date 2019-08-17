@@ -18,7 +18,7 @@ export default class IndexPage extends Component {
      */
     componentDidMount(): void {
         this.setState({
-            tracks: Application.managers.tracksManager.list().map((value, index) =>
+            tracks: Application.managers.tracksManager.list().filter(value => value.album === undefined).map((value, index) =>
                 <Col md={4} key={value.name}>{TrackNode.createByData({...value, index: index + 1})}</Col>)
         });
     }

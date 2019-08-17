@@ -64,17 +64,20 @@ export default class TrackNode extends Component<TrackNodeProps> {
      * Создает объект по значению
      */
     static createByData(value: ITrack & { index: number }) {
-        return <TrackNode name={value.name} img={`/media/audio/${value.name}/artwork.jpg`}
-                          audio={`/media/audio/${value.name}/${value.name}.mp3`}
-                          stores={value.stores} index={value.index} key={value.name} lyrics={value.lyrics}/>
+        const rootName = value.album ? value.album : value.name;
+        return <TrackNode {...value} img={`/media/audio/${rootName}/artwork.jpg`}
+                          audio={`/media/audio/${rootName}/${value.name}.mp3`} key={value.name}/>
     }
 
     /**
      * Создает кнопку Lyrics & Info
-     * @param name
+     * @param track
      */
-    static createLyricsButton(name: string): React.ReactNode {
-        return <TrackNodeLink link={"/track/" + name} title={"LYRICS & INFO"} icon={"fas fa-book"} key={"lyrics"}/>
+    static createLyricsButton(track: ITrack): React.ReactNode {
+        const rootName = track.album ? track.album + "/" + track.name : track.name;
+        if(track.is_album)
+            return <TrackNodeLink link={"/a/" + track.name} title={"ALBUM & INFO"} icon={"fas fa-book"} key={"album"}/>
+        return <TrackNodeLink link={"/track/" + rootName} title={"LYRICS & INFO"} icon={"fas fa-book"} key={"lyrics"}/>
     }
 
     /**
@@ -89,8 +92,10 @@ export default class TrackNode extends Component<TrackNodeProps> {
                 if (this.props.stores.hasOwnProperty(key))
                     children.push(<TrackNodeLink {...{...store, link: store.url + this.props.stores[key], key}}/>);
             }
-        if (this.props.lyrics && window.location.href.indexOf("/track/") === -1) {
-            children.push(TrackNode.createLyricsButton(this.props.name));
+        if (window.location.href.indexOf("/track/") === -1 && window.location.href.indexOf("/a/") === -1) {
+            children.push(TrackNode.createLyricsButton(this.props));
+        }else if(this.props.album){
+            children.push(TrackNode.createLyricsButton(this.props));
         }
         return children;
     }

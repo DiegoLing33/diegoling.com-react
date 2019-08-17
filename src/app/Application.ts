@@ -26,6 +26,7 @@
 import CoreLoadingManager from "./managers/CoreLoadingManager";
 import StoresManager from "./managers/StoresManager";
 import TracksManager from "./managers/TracksManager";
+import AlbumsManager from "./managers/AlbumsManager";
 
 /**
  * Менеджеры приложения
@@ -34,6 +35,7 @@ interface IApplicationManagers {
     [name: string]: CoreLoadingManager<any>;
     storesManager: StoresManager;
     tracksManager: TracksManager;
+    albumsManager: AlbumsManager;
 }
 
 /**
@@ -47,6 +49,7 @@ export default class Application {
     public static managers: IApplicationManagers = {
         storesManager: new StoresManager(),
         tracksManager: new TracksManager(),
+        albumsManager: new AlbumsManager(),
     };
 
     /**

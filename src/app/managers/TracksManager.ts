@@ -14,6 +14,7 @@ export interface ITrack {
     story?: string;
     album?: string;
     release?: string;
+    is_album?: boolean;
 
     promo?: {title: string, url: string};
 }
@@ -25,11 +26,12 @@ export default class TracksManager extends ListLoadingManager<ITrack> {
 
     /**
      * Загружает лирику
-     * @param name
+     * @param track
      * @param callback
      */
-    static loadLyrics(name: string, callback: (text: string) => void): void{
-        request("get", "/media/audio/" + name + "/lyrics.txt").then(response => {
+    static loadLyrics(track: ITrack, callback: (text: string) => void): void{
+        const rootName = track.album ? (track.album + "/" + track.name) : track.name  + "/lyrics";
+        request("get", "/media/audio/" + rootName + ".txt").then(response => {
             callback(response.data);
         }) ;
     }

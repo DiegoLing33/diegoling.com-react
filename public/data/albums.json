@@ -1,0 +1,84 @@
+{
+  "No Way Out": {
+    "title": "No Way Out",
+    "release": "JULY 20, 2019",
+    "stores":  {
+      "itunes":      "album/no-way-out-ep/1472433800",
+      "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+      "boom":        "album/7547545",
+      "yandexmusic": "album/8017486"
+    },
+    "tracks": [
+      {
+        "name":    "No Way Out",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "album/no-way-out/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131668"
+        }
+      },
+      {
+        "name":    "Wanna You See",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "album/wanna-you-see/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131669"
+        }
+      },
+      {
+        "name":    "Wipe All Your Tears",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "album/wipe-all-your-tears/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131670"
+        }
+      },
+      {
+        "name":    "Hey a-you",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "album/hey-a-you/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131671"
+        },
+        "promo":   {
+          "title": "Promo Video 2019",
+          "url":   "https://www.youtube.com/embed/Hc6bSG-egUk"
+        }
+      },
+      {
+        "name":    "Lifeline",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "lbum/lifeline/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131672"
+        }
+      },
+      {
+        "name":    "The Power Of Moon",
+        "release": "JULY 20, 2019",
+        "lyrics":  true,
+        "stores":  {
+          "itunes":      "album/the-power-of-moon/1472433800",
+          "spotify":     "album/5WUm6K4u0xaTqa3fAepWNY",
+          "boom":        "album/7547545",
+          "yandexmusic": "album/8017486/track/55131673"
+        }
+      }
+    ]
+  }
+}

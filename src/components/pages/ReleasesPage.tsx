@@ -32,8 +32,9 @@ import Application from "../../app/Application";
 import {Link} from "react-router-dom";
 
 function ReleasesPageGridItem(props: ITrack) {
+    let url = props.is_album ? "/a/" + props.name : "/track/" + props.name;
     return (<Col md={3} style={{textAlign: "center", marginBottom: 20}}>
-        <Link className={"release-grid-item"} to={"/track/" + props.name}>
+        <Link className={"release-grid-item"} to={url}>
             <img src={"/media/audio/" + props.name + "/artwork.jpg"} alt={props.name + " Artwork"} />
             <div style={{fontSize: 18}}>{props.name}</div>
             <div style={{fontSize: 11, opacity: 0.7}}>{props.release}</div>

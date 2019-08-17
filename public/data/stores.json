@@ -2,7 +2,7 @@
   "itunes":      {
     "icon": "fab fa-itunes-note",
     "title": "iTunes",
-    "url": "https://itunes.apple.com/ru/"
+    "url": "https://itunes.apple.com/"
   },
   "spotify":     {
     "icon": "fab fa-spotify",

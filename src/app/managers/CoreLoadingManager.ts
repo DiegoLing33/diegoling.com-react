@@ -79,7 +79,7 @@ export default abstract class CoreLoadingManager<DataInterface> {
      * @param callback
      */
     public load(callback?: (data?: DataInterface) => void) {
-        console.log(`${this.constructor.name} is loading...`);
+        // console.log(`${this.constructor.name} is loading...`);
         this.__startLoadingObservers.forEach(value => value());
         request("get", this.path(), {}, null, {ignoreCache: true})
             .then(value => {
@@ -87,7 +87,7 @@ export default abstract class CoreLoadingManager<DataInterface> {
             }).catch(reason => {
             console.log(reason);
         }).finally(()=>{
-            console.log(`${this.constructor.name} is ready.`);
+            // console.log(`${this.constructor.name} is ready.`);
             this.__ready = true;
             this.__endLoadingObservers.forEach(value => value(this.__items));
             if (callback) callback(this.__items);

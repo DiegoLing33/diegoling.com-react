@@ -7,6 +7,7 @@ import TrackPage from "./components/pages/TrackPage";
 import NavigationBar from "./components/NavigationBar";
 import Application from "./app/Application";
 import ReleasesPage from "./components/pages/ReleasesPage";
+import AlbumPage from "./components/pages/AlbumPage";
 
 /**
  * Состояния приложения
@@ -58,7 +59,14 @@ export default class App extends Component<any, IAppStates> {
                             <Switch>
                                 <Route exact path={"/"} component={IndexPage}/>
                                 <Route exact path={"/track/:track"} component={TrackPage}/>
+                                <Route exact path={"/track/:album/:track"} component={TrackPage}/>
+                                <Route exact path={"/a/:album"} component={AlbumPage}/>
                                 <Route exact path={"/releases"} component={ReleasesPage}/>
+                                <Route>
+                                    <h2 style={{textAlign: "center", color: "#fefefe", paddingTop: 15}}>
+                                        Page not found.
+                                    </h2>
+                                </Route>
                             </Switch>
                         </Container>
                     </div>

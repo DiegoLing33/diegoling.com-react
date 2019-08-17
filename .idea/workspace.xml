@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b44968f-e11a-433f-9cc0-308c5c040bd6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/data/albums.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/managers/AlbumsManager.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/AlbumPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/stores.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/stores.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data/tracks.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/tracks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/managers/CoreLoadingManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/managers/CoreLoadingManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/managers/TracksManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/managers/TracksManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/IndexPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/IndexPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/ReleasesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/ReleasesPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/TrackPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/TrackPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/track/TrackNode.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/track/TrackNode.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -119,7 +126,10 @@
       <workItem from="1562412502210" duration="10004000" />
       <workItem from="1562455664222" duration="167000" />
       <workItem from="1562455861813" duration="378000" />
-      <workItem from="1562695877120" duration="36000" />
+      <workItem from="1562695877120" duration="685000" />
+      <workItem from="1562762282854" duration="12000" />
+      <workItem from="1563179799541" duration="95000" />
+      <workItem from="1563578327778" duration="4511000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1562351632404</created>
@@ -135,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562429910403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Much new">
+      <created>1562695937376</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562695937376</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +166,20 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
